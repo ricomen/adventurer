@@ -601,6 +601,9 @@ template {
   letter-spacing: 4px;
   text-transform: uppercase;
 }
+.about {
+  margin-bottom: 55px;
+}
 .about:before,
 .about:after {
   display: table;
@@ -735,6 +738,69 @@ template {
 
   margin: 0;
   padding: 3px 10px;
+}
+.service__title {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 46px;
+
+  margin: 0 0 55px 0;
+  padding: 0;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #3f444a;
+}
+.service__items {
+  font-size: 0;
+}
+.service__item {
+  display: inline-block;
+
+  width: 276px;
+  margin-right: 60px;
+  padding: 40px 27px;
+
+  transition: all .2s;
+  text-align: center;
+  vertical-align: top;
+
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+.service__item:first-child {
+  margin-left: 30px;
+}
+.service__item:last-child {
+  margin-right: 0;
+}
+.service__item-title {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 30px;
+
+  margin: 0;
+  padding: 0 0 22px 0;
+
+  color: #3f444a;
+}
+.service__item-description {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 26px;
+
+  margin-bottom: 40px;
+
+  color: #5c6873;
+}
+.service__item:hover {
+  color: #fff;
+  background-color: #3f444a;
+}
+.service__item:hover .service__item-title,
+.service__item:hover .service__item-description {
+  color: #fff;
 }
 .btn {
   font-family: "Roboto Condensed";
