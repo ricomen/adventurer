@@ -1,0 +1,33 @@
+.menu {  
+  float: right;
+  padding: 32px 0;
+  &__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  }
+  &__item {
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    font-style: normal;
+    color: @base-grey-color;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 33px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: block; 
+    color: @base-grey-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    &--active {
+      color: @base-color-red;
+    }
+  }
+}

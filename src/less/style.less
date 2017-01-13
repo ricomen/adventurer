@@ -1,15 +1,22 @@
-//@import "../../node_modules/normalize.less/normalize.less";
-@import (less) "global/bootstrap.css";
+@import "../../node_modules/normalize.less/normalize.less";
+/* @import (less) "global/bootstrap.css"; */
 @import "variables.less";
 @import "mixins.less";
-@import "global/fonts.less";
+/* @import "global/fonts.less"; */
 // @import "global/icons.less";
 
 
-
 @import "blocks/page-header.less";
-@import "blocks/main-nav.less";
+@import "blocks/logo.less";
+@import "blocks/menu.less";
+@import "blocks/icons.less";
+@import "blocks/slider.less";
+@import "blocks/btn.less";
 @import "blocks/page-main.less";
 @import "blocks/page-footer.less";
 
-
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  .clearfix();
+}
