@@ -556,7 +556,9 @@ template {
   background-color: #c7c9ca;
 }
 .slide {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  min-height: 266px;
 
   text-align: center;
 }
@@ -575,6 +577,7 @@ template {
 }
 .slide__description {
   font-size: 14px;
+  font-weight: 600;
   font-weight: normal;
   font-style: normal;
   line-height: 20px;
