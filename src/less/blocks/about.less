@@ -1,0 +1,117 @@
+.about {
+  .clearfix();
+  &__column--left {
+    float: left;
+    width: 570px;
+  }
+  &__column--right {
+    float: right;
+    width: 570px;
+  }
+  &__title {
+    margin: 0 0 55px 0 ;
+    padding: 0;
+    text-align: center;
+    font-family: "Roboto Condensed" ;
+    font-size: 40px;
+    line-height: 46px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: @base-grey-color;    
+  }
+  &__text {
+    margin: 0 0 60px 0;
+    padding: 0 190px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 32px;
+    color: @light-grey-color;
+  }
+}
+.accordion {  
+  &__item {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0; 
+    }
+  }
+  &__title {
+    margin: 0;
+    padding: 18px 60px 18px 20px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 600;
+    color: #fff;
+    background-color: @base-grey-color;
+    border-radius: 3px;
+    &--active {
+      background-color: @base-color-red;
+    }
+  }
+  &__content {
+    display: none;
+    margin: 0;
+    padding: 35px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    font-style: normal;    
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    color: #323232;
+    background-color: #f8f8f8;
+    &--show {
+      display: block;
+    }
+  }
+}
+.stacks {
+  &__list {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__item {
+    position: relative;
+    margin: 0 0 28px 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    border: 1px solid #d7d7d7; 
+    border-radius: 3px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__bar {
+    background-color: @base-color-red;  
+    &--50 {
+      width: 50%;
+    }  
+    &--60 {
+      width: 60%;
+    }
+    &--75 {
+      width: 75%;
+    }
+    &--80 {
+      width: 80%;
+    }
+    &--85 {
+      width: 85%;
+    }
+     &--90 {
+      width: 90%;
+    }
+  }
+  &__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding: 3px 10px;    
+  }
+
+
+}
