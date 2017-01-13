@@ -497,7 +497,8 @@ template {
 
   overflow: hidden;
 
-  padding: 262px 0;
+  width: auto;
+  height: 780px;
 
   color: #fff;
   background: #000 url("../img/slider-bg.jpg") no-repeat center center;
@@ -507,6 +508,7 @@ template {
   line-height: 56px;
 
   position: absolute;
+  z-index: 50;
   top: 50%;
 
   width: 60px;
@@ -555,14 +557,22 @@ template {
 .slider__control--active:hover {
   background-color: #c7c9ca;
 }
-.slide {
+.slides {
+  padding-top: 260px;
+}
+.slides__item {
   font-family: "Open Sans", "Arial", sans-serif;
+
+  display: none;
 
   min-height: 266px;
 
   text-align: center;
 }
-.slide__title {
+.slides__item:nth-child(1) {
+  display: block;
+}
+.slides__title {
   font-size: 90px;
   font-weight: 800;
   font-style: normal;
@@ -575,7 +585,7 @@ template {
 
   color: #fff;
 }
-.slide__description {
+.slides__description {
   font-size: 14px;
   font-weight: 600;
   font-weight: normal;
