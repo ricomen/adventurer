@@ -922,6 +922,53 @@ template {
   margin: 0;
   padding: 0;
 }
+.counter {
+  font-size: 0;
+
+  padding: 55px 15px;
+
+  background-image: url("../img/counter-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.counter__item {
+  display: inline-block;
+
+  width: 248px;
+  margin-right: 20px;
+  padding: 50px 10px;
+
+  text-align: center;
+  vertical-align: top;
+
+  background-color: rgba(236, 72, 72, .3);
+}
+.counter__item:last-child {
+  margin-right: 0;
+}
+.counter__value {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 46px;
+
+  margin-top: 25px;
+
+  color: #fff;
+}
+.counter__description {
+  font-size: 14px;
+  line-height: 22px;
+
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #fff;
+}
 .btn {
   font-family: "Roboto Condensed";
   font-size: 16px;
