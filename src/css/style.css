@@ -922,9 +922,120 @@ template {
   margin: 0;
   padding: 0;
 }
+.team__title {
+  font-size: 40px;
+  line-height: 46px;
+
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+
+  text-align: center;
+
+  color: #3f444a;
+}
+.team__description {
+  font-size: 18px;
+  line-height: 32px;
+
+  overflow: hidden;
+
+  margin: 0 0 50px 0;
+  padding: 0;
+
+  text-align: center;
+
+  color: #5c6873;
+}
+.team__list {
+  font-size: 0;
+
+  padding: 0 15px;
+}
+.team__member {
+  position: relative;
+
+  display: inline-block;
+  overflow: hidden;
+
+  width: 268px;
+  height: 300px;
+  margin-right: 20px;
+
+  text-align: center;
+  vertical-align: top;
+  white-space: no-wrap;
+}
+.team__member:nth-child(4n) {
+  margin-right: 0;
+}
+.team__member:hover .team__member-description {
+  transform: translateY(0);
+}
+.team__member-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  transition: transform .25s ease-in-out;
+  transform: translateY(200px);
+  white-space: no-wrap;
+
+  background: #ec4848;
+}
+.team__member-name {
+  font-size: 25px;
+  line-height: 30px;
+
+  white-space: no-wrap;
+
+  color: #fff;
+}
+.team__member-specialize {
+  font-size: 18px;
+  line-height: 30px;
+
+  white-space: no-wrap;
+
+  color: #fff;
+}
+.team__photo {
+  min-width: 100%;
+  height: auto;
+}
+.team__link {
+  font-size: 18px;
+  line-height: 30px;
+
+  position: relative;
+
+  color: #fff;
+}
+.team__link:hover {
+  color: #000;
+}
+.team__link:hover:after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 3px;
+
+  content: "";
+
+  background-color: #000;
+}
 .counter {
   font-size: 0;
 
+  margin-bottom: 95px;
   padding: 55px 15px;
 
   background-image: url("../img/counter-bg.jpg");
@@ -1012,3 +1123,85 @@ body {
 .container:after {
   clear: both;
 }
+@font-face {
+  font-family: "facebook";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../fonts/facebook.eot?91027279");
+  src: url("../fonts/facebook.eot?91027279#iefix") format("embedded-opentype"), url("../fonts/facebook.woff2?91027279") format("woff2"), url("../fonts/facebook.woff?91027279") format("woff"), url("../fonts/facebook.ttf?91027279") format("truetype"), url("../fonts/facebook.svg?91027279#facebook") format("svg");
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'facebook';
+    src: url('../font/facebook.svg?91027279#facebook') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "facebook";
+  font-weight: normal;
+  font-style: normal;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  display: inline-block;
+
+  width: 1em;
+  margin-right: .2em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+
+  speak: none;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+/* '' */
+.icon-facebook:before {
+  content: "\f09a";
+}
+/* '' */
+.icon-linkedin-1:before {
+  content: "\f0e1";
+}
+/* '' */
+.icon-dribbble:before {
+  content: "\f17d";
+}
+/* '' */
+.icon-behance:before {
+  content: "\f1b4";
+}
+/* '' */
+.icon-pinterest:before {
+  content: "\f231";
+}
+/* '' */
+.icon-vimeo:before {
+  content: "\f27d";
+}
+/* '' */
+.icon-gplus:before {
+  content: "\f30f";
+}
+/* '' */
