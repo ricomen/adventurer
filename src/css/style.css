@@ -983,7 +983,6 @@ template {
 
   transition: transform .25s ease-in-out;
   transform: translateY(200px);
-  white-space: no-wrap;
 
   background: #ec4848;
 }
@@ -991,7 +990,7 @@ template {
   font-size: 25px;
   line-height: 30px;
 
-  white-space: no-wrap;
+  white-space: nowrap;
 
   color: #fff;
 }
@@ -999,7 +998,7 @@ template {
   font-size: 18px;
   line-height: 30px;
 
-  white-space: no-wrap;
+  white-space: nowrap;
 
   color: #fff;
 }
