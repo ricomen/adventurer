@@ -1158,7 +1158,6 @@ template {
   margin-bottom: 50px;
   padding: 0;
 
-  text-align: center;
   text-transform: uppercase;
 
   color: #3f444a;
@@ -1168,20 +1167,53 @@ template {
 
   position: relative;
 
-  display: block;
+  display: inline-block;
 
   width: 155px;
   padding-right: 20px;
   padding-left: 45px;
 
+  text-align: left;
   vertical-align: top;
-
-  background-color: red;
 }
 .awesome-works__item-icon {
   position: absolute;
+  top: 2px;
+  left: 0;
 
-  background: url("../img/spite.png") no-repeat;
+  display: inline-block;
+
+  background: url("../img/sprite.png") no-repeat;
+}
+.awesome-works__item-icon--fish {
+  width: 39px;
+  height: 43px;
+
+  background-position: 0 -206px;
+}
+.awesome-works__item-icon--term {
+  width: 35px;
+  height: 30px;
+
+  background-position: 0 -39px;
+}
+.awesome-works__item-icon--jungle {
+  width: 32px;
+  height: 34px;
+
+  background-position: 0 -162px;
+}
+.awesome-works__item-icon--brush {
+  width: 29px;
+  height: 31px;
+
+  background-position: 0 -79px;
+}
+.awesome-works__item-icon--bird {
+  width: 33px;
+  height: 29px;
+
+  background-position: 0 0;
 }
 .awesome-works__content {
   font-size: 24px;

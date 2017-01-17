@@ -18,33 +18,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-bird {
   background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
-  width: 33px;
-  height: 29px;
+
 }
-.icon-brush {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -79px;
-  width: 29px;
-  height: 31px;
-}
-.icon-fish {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -206px;
-  width: 39px;
-  height: 43px;
-}
-.icon-jungle {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -162px;
-  width: 32px;
-  height: 34px;
-}
-.icon-term {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -39px;
-  width: 35px;
-  height: 30px;
+
+
+
+
 }
 .icon-zoom {
   background-image: url(../img/sprite.png);
