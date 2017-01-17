@@ -1222,6 +1222,75 @@ template {
 
   color: #3f444a;
 }
+.subscribe {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  color: #fff;
+  background-color: #312b2b;
+}
+.subscribe__columns:before,
+.subscribe__columns:after {
+  display: table;
+
+  content: "";
+}
+.subscribe__columns:after {
+  clear: both;
+}
+.subscribe__column {
+  width: 50%;
+}
+.subscribe__column--left {
+  float: left;
+}
+.subscribe__column--right {
+  float: right;
+
+  text-align: right;
+}
+.subscribe__form {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+}
+.subscribe__form-field {
+  font-size: 16px;
+  line-height: 24px;
+
+  width: 266px;
+  padding-top: 13px;
+  padding-right: 78px;
+  padding-bottom: 13px;
+  padding-left: 16px;
+
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.subscribe__btn {
+  font-size: 18px;
+
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+
+  width: 68px;
+  height: 50px;
+
+  cursor: pointer;
+
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+  background-color: #ec4848;
+}
+.subscribe__btn:hover {
+  background-color: #e71a1a;
+}
 .counter {
   font-size: 0;
 
@@ -1314,26 +1383,26 @@ body {
   clear: both;
 }
 @font-face {
-  font-family: "facebook";
+  font-family: "fontello";
   font-weight: normal;
   font-style: normal;
 
-  src: url("../fonts/facebook.eot?91027279");
-  src: url("../fonts/facebook.eot?91027279#iefix") format("embedded-opentype"), url("../fonts/facebook.woff2?91027279") format("woff2"), url("../fonts/facebook.woff?91027279") format("woff"), url("../fonts/facebook.ttf?91027279") format("truetype"), url("../fonts/facebook.svg?91027279#facebook") format("svg");
+  src: url("../fonts/fontello.eot?96054908");
+  src: url("../fonts/fontello.eot?96054908#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?96054908") format("woff2"), url("../fonts/fontello.woff?96054908") format("woff"), url("../fonts/fontello.ttf?96054908") format("truetype"), url("../fonts/fontello.svg?96054908#fontello") format("svg");
 }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: 'facebook';
-    src: url('../font/facebook.svg?91027279#facebook') format('svg');
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?96054908#fontello') format('svg');
   }
 }
 */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  font-family: "facebook";
+  font-family: "fontello";
   font-weight: normal;
   font-style: normal;
   /* opacity: .8; */
@@ -1371,7 +1440,7 @@ body {
   content: "\f09a";
 }
 /* '' */
-.icon-linkedin-1:before {
+.icon-linkedin:before {
   content: "\f0e1";
 }
 /* '' */
@@ -1383,6 +1452,10 @@ body {
   content: "\f1b4";
 }
 /* '' */
+.icon-paper-plane:before {
+  content: "\f1d8";
+}
+/* '' */
 .icon-pinterest:before {
   content: "\f231";
 }
