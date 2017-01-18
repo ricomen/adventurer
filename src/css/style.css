@@ -1291,6 +1291,14 @@ template {
 .subscribe__btn:hover {
   background-color: #e71a1a;
 }
+.subscribe__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 50px;
+
+  color: #ccc;
+}
 .counter {
   font-size: 0;
 
@@ -1362,6 +1370,70 @@ template {
 }
 .btn--red:hover {
   background-color: #e71a1a;
+}
+.page-footer {
+  padding-top: 50px;
+
+  color: #ccc;
+  background-color: #151515;
+}
+.page-footer__cols {
+  font-size: 0;
+}
+.page-footer__col {
+  display: inline-block;
+
+  width: 290px;
+
+  vertical-align: top;
+}
+.page-footer__title {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 28px;
+
+  margin: 0;
+  padding: 0;
+}
+.page-footer__title--bigRed {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 46px;
+
+  margin: 0;
+  padding: 0;
+
+  text-transform: uppercase;
+
+  color: #ec4848;
+}
+.page-footer__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.page-footer__item {
+  position: relative;
+
+  padding-left: 50px;
+}
+.page-footer__item:before {
+  font-size: 20px;
+
+  position: absolute;
+  top: 0;
+  left: 16px;
+
+  display: block;
+
+  width: 16px;
+  height: 16px;
+
+  content: "✔";
+
+  color: #ec4848;
 }
 body {
   font-family: "Roboto Condensed", "Arial", sans-serif;
