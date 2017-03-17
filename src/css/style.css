@@ -566,14 +566,12 @@ template {
 .slides__item {
   font-family: "Open Sans", "Arial", sans-serif;
 
-  display: none;
+  position: absolute;
 
+  width: 100%;
   min-height: 266px;
 
   text-align: center;
-}
-.slides__item:nth-child(1) {
-  display: block;
 }
 .slides__title {
   font-size: 90px;
@@ -664,6 +662,8 @@ template {
   margin: 0;
   padding: 18px 60px 18px 20px;
 
+  cursor: pointer;
+
   color: #fff;
   border-radius: 3px;
   background-color: #3f444a;
@@ -677,8 +677,6 @@ template {
   font-style: normal;
   line-height: 20px;
 
-  display: none;
-
   margin: 0;
   padding: 35px 20px;
 
@@ -686,9 +684,6 @@ template {
   border: 1px solid #c4c4c4;
   border-radius: 3px;
   background-color: #f8f8f8;
-}
-.accordion__content--show {
-  display: block;
 }
 .stacks__list {
   margin: 0;
