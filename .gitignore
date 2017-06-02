@@ -48,5 +48,3 @@ node_modules
 npm-debug.log
 tmp
 *.bat
-*.js
-*.json
